@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfect Pizza Cart</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="pizzar.png" type="image/png">
+    
+    
+</head>
+
+<body>
+    
+    <h1>Perfect Pizza Cart</h1>
+    <!--Pizza Table-->
+    <div class="contain cart">
+        <h2>Pizza Shopping Cart</h2>
+        <table class="pizzaCartTab"> <!--changed-->
+            <tr>
+                <td class="item">
+                    <h3 class="item">Small Pizza</h3>
+                </td>
+                <td><button class="addBtn small" id="test" on type="button" name="add">+</button></td>
+                <td>
+                    <h3 class="smallPizzaQty item">0</h3>
+                </td>
+                <td><button class="minusBtn small" on type="button" name="reduce">-</button></td>
+                <td>
+                    <h3 class="item">R<span class="smallPizzaTotal">0.00</span>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="item">
+                    <h3 class="item">Medium Pizza</h3>
+                </td>
+                <td><button class="addBtn med" on type="button" name="add">+</button></td>
+                <td>
+                    <h3 class="medPizzaQty item">0</h3>
+                </td>
+                <td><button class="minusBtn med" on type="button" name="reduce">-</button></td>
+                <td>
+                    <h3 class="item">R<span class="medPizzaTotal">0.00</span>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <h3 class="item">Large Pizza</h3>
+                </td>
+                <td><button class="addBtn large" on type="button" name="add">+</button></td>
+                <td>
+                    <h3 class="largePizzaQty item">0</h3>
+                </td>
+                <td><button class="minusBtn large" on type="button" name="reduce">-</button></td>
+                <td>
+                    <h3 class="item">R<span class="largePizzaTotal">0.00</span>
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="4">
+                    <h3 class="item">Total Cost</h3>
+                </td>
+                <td>
+                    <h3 class="item">R<span class="cartTotal">0.00</span></h3>
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="5">
+                    <button class="checkOut" on type="button" name="checkOut">Check Out</button>
+                </td>
+            </tr>
+        </table>
+            <!--Payout-->
+        <div class="payOut hidden">
+            <table class="pizzaCartTab">
+                <tr>
+                    <h3 class="hidden item message">Message</h3>
+                </tr>
+                <tr>
+                    <td>
+                        <h3>Payment Amount:</h3>
+                    </td>
+                    <td class="pAmt">R<input class="payAmt" type="number"></td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <button class="payBtn" on type="button" name="pay">Pay</button>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <!--Pizza Boxes-->
+    <div class="pizzaBox">
+        <div class="contain small_pizza">
+
+            <h2>Small Pizza</h2>
+
+            <div class="pizza_img">
+                <img src="pizzar.png" width="100">
+            </div>
+
+            <h3>R49.00</h3>
+
+            <div class="pizza_top">
+                Pizza Toppings<br>
+                Broccolini or broccoli and pancetta/speck/bacon.<br>
+
+            </div>
+
+            <button class="addBtn small buy" on type="button" name="add">Buy</button>
+
+        </div>
+
+        <div class="contain medium_pizza">
+
+            <h2>Medium Pizza</h2>
+
+            <div class="pizza_img">
+                <img src="pizzar.png" width="125">
+            </div>
+
+            <h3>R89.00</h3>
+
+            <div class="pizza_top">
+                Pizza Toppings<br>
+                Capers, anchovies, eggplant, capsicum.<br>
+                
+            </div>
+
+            <button class="addBtn med buy" on type="button" name="add">Buy</button>
+
+        </div>
+
+        <div class="contain large_pizza">
+
+            <h2>Large Pizza</h2>
+
+            <div class="pizza_img">
+                <img src="pizzar.png" width="150">
+            </div>
+
+            <h3>R129.00</h3>
+
+            <div class="pizza_top">
+                Pizza Toppings<br>
+                Black olives, anchovies, capers.<br>
+               
+            </div>
+
+            <button class="addBtn large buy" on type="button" name="add">Buy</button>
+
+        </div>
+    </div>
+<!--contact us Boxes-->
+    <div class="contain contact_us">
+
+        <h2>Contact Details</h2>
+
+        <p id="contact">
+            Contact us at: (011)-333-4569 <br>
+            info@perfectpizza.co.za <br>
+                              <br>
+        </p>
+        <!--Location-->
+        <p id="location">
+            Sandton <br>
+            Braamfontein <br>
+            Tembisa
+        </p>
+    </div>
+    <!--Footer-->
+    <div class="footer">
+         Khona Ngubeni | CodeX
+    </div>
+    <script src="pizzaCart.js" charset="utf-8"></script>   
+</body>
+
+</html>
